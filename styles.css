@@ -4,6 +4,12 @@
     padding: 20px; /* Add some padding for spacing */
 }
 
+/* Styles for the logo */
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Styles for the navigation links */
 #navbar li {
     display: inline; /* Display the list items horizontally */
@@ -27,8 +33,6 @@
     cursor: pointer; /* Change cursor to indicate interactivity */
 }
 
-/* Styles for the cart icon */
-#bag-icon a {
     color: #050315; /* Text color */
     text-decoration: none; /* Remove underline from link */
     padding: 5px; /* Add padding to make the link easier to click */
