@@ -1,9 +1,7 @@
 /* Styles for the header section */
-/* Styles for the header section */
 #header {
-    background-color: #fbfbfe; /* Background color */
+    background: url('texasmadecode/my-personal-website/pics/banner.jpg') center/cover no-repeat #fbfbfe; /* Background image */
     padding: 20px; /* Add some padding for spacing */
-    background: url('texasmadecode/my-personal-website/pics/banner.jpg') center/cover no-repeat; /* Background image */
 }
 
 /* Styles for the logo */
@@ -35,7 +33,7 @@
     cursor: pointer; /* Change cursor to indicate interactivity */
 }
 
-    color: #050315; /* Text color */
-    text-decoration: none; /* Remove underline from link */
-    padding: 5px; /* Add padding to make the link easier to click */
+/* Remove Get Started and Log In buttons */
+#menu .actions.stacked {
+    display: none;
 }
