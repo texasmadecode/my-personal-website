@@ -3,126 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Victor Gonzalez - Blog</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Victor Gonzalez - Welcome</title>
+    <link rel="stylesheet" href="main.css">
     <style>
-        /* Custom styles for the blog page */
+        /* Custom styles for the index page */
         body {
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
         }
 
-        #wrapper {
+        .welcome-section {
+            background-image: url('placeholder-background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
             display: flex;
             flex-direction: column;
-            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            padding: 0 20px;
+            animation: fadeInUp 1s ease-out;
         }
 
-        header, footer {
+        .welcome-section h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            animation: slideInDown 1s ease-out;
+        }
+
+        .welcome-section p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            animation: slideInUp 1s ease-out;
+        }
+
+        .welcome-section a {
+            display: inline-block;
+            padding: 10px 20px;
             background-color: #2f27ce;
             color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #dedcff;
-            padding: 10px 0;
-        }
-
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul li {
-            margin-right: 20px;
-        }
-
-        nav ul li a {
-            color: #050315;
             text-decoration: none;
-            padding: 5px 10px;
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
 
-        nav ul li a:hover {
+        .welcome-section a:hover {
             background-color: #433bff;
         }
 
-        #main {
-            flex: 1;
-            padding: 20px;
+        /* Dropdown menu */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-top: 30px;
         }
 
-        .blog-post {
-            background-color: #fbfbfe;
-            padding: 20px;
-            margin-bottom: 20px;
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            z-index: 1;
         }
 
-        .blog-post h3 {
-            margin-top: 0;
+        .dropdown:hover .dropdown-content {
+            display: block;
         }
 
-        footer {
-            margin-top: auto;
+        .dropdown-content a {
+            display: block;
+            padding: 10px 15px;
+            color: #050315;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Additional content */
+        
+        .tech-topics {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .tech-topic {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: calc(33.33% - 20px);
+            min-width: 200px;
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .tech-topic h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .tech-topic p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* Social links */
+        .social-links {
+            margin-top: 50px;
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            color: #2f27ce;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #433bff;
+        }
+
+        /* Animations */
+        @keyframes slideInDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInUp {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
     </style>
 </head>
 <body>
 
-    <!-- Wrapper -->
-    <div id="wrapper">
-
-        <!-- Header -->
-        <header>
-            <h1>Victor Gonzalez</h1>
-            <p>Welcome to my blog</p>
-        </header>
-
-        <!-- Navigation -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
-        <!-- Main Content -->
-        <div id="main">
-            <!-- Blog Posts -->
-            <section id="blog">
-                <div class="inner">
-                    <h2>Latest Blog Posts</h2>
-                    <div class="blog-post">
-                        <h3>Sample Blog Post 1</h3>
-                        <p>This is the content of the first blog post.</p>
-                    </div>
-                    <div class="blog-post">
-                        <h3>Sample Blog Post 2</h3>
-                        <p>This is the content of the second blog post.</p>
-                    </div>
-                    <!-- Add more blog posts here -->
-                </div>
-            </section>
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+        <h1>Welcome to My Personal Website</h1>
+        <p>Hello, I'm Victor Gonzalez. I'm a cybersecurity and networking enthusiast passionate about exploring the latest technologies.</p>
+        <div class="dropdown">
+            <a href="#">Explore More</a>
+            <div class="dropdown-content">
+                <a href="about.html">About Me</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
         </div>
+    </section>
 
-        <!-- Footer -->
-        <footer>
-            <p>&copy; 2024 Victor Gonzalez. All rights reserved.</p>
-        </footer>
-
+    <!-- Additional Tech Topics -->
+    <div class="tech-topics">
+        <div class="tech-topic">
+            <h2>Artificial Intelligence</h2>
+            <p>Learn about the latest advancements in artificial intelligence and its applications in various industries.</p>
+        </div>
+        <div class="tech-topic">
+            <h2>Blockchain Technology</h2>
+            <p>Discover how blockchain technology is revolutionizing finance, supply chain, and more.</p>
+        </div>
+        <div class="tech-topic">
+            <h2>Internet of Things (IoT)</h2>
+            <p>Explore the interconnected world of IoT devices and their impact on our daily lives.</p>
+        </div>
+        <div class="tech-topic">
+            <h2>Cybersecurity Trends</h2>
+            <p>Stay updated on the latest cybersecurity threats, trends, and best practices to protect your digital assets.</p>
+        </div>
+        <div class="tech-topic">
+            <h2>Cloud Computing</h2>
+            <p>Learn about cloud computing services and how they enable scalable and flexible IT solutions.</p>
+        </div>
     </div>
-
-</body>
-</html>
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="Modern_officer" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+    <!-- Social Links -->
+    <div class="social-links">
+        <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+        <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="#" target="_blank" rel="
