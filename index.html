@@ -1,123 +1,125 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
+    <title>Victor Gonzalez - Blog</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <style>
-        /* Set background images */
-        #header {
-            background: url('texasmadecode/my-personal-website/pics/banner.jpg') center/cover no-repeat;
+        /* Custom styles for the blog page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
-        #one {
-            background: url('texasmadecode/my-personal-website/pics/pic01.jpg') center/cover no-repeat;
+
+        #wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
-        #two {
-            background: url('texasmadecode/my-personal-website/pics/pic02.jpg') center/cover no-repeat;
+
+        header, footer {
+            background-color: #2f27ce;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
         }
-        #three {
-            background: url('texasmadecode/my-personal-website/pics/pic03.jpg') center/cover no-repeat;
+
+        nav {
+            background-color: #dedcff;
+            padding: 10px 0;
         }
-        #four {
-            background: url('texasmadecode/my-personal-website/pics/pic04.jpg') center/cover no-repeat;
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
         }
-        #five {
-            background: url('texasmadecode/my-personal-website/pics/pic05.jpg') center/cover no-repeat;
+
+        nav ul li {
+            margin-right: 20px;
         }
-        #six {
-            background: url('texasmadecode/my-personal-website/pics/pic06.jpg') center/cover no-repeat;
+
+        nav ul li a {
+            color: #050315;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #433bff;
+        }
+
+        #main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .blog-post {
+            background-color: #fbfbfe;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-post h3 {
+            margin-top: 0;
+        }
+
+        footer {
+            margin-top: auto;
         }
     </style>
-<body class="is-preload">
+</head>
+<body>
 
     <!-- Wrapper -->
     <div id="wrapper">
 
         <!-- Header -->
-        <header id="header" class="alt">
-                <a href="#menu">Menu</a>
-            </nav>
+        <header>
+            <h1>Victor Gonzalez</h1>
+            <p>Welcome to my blog</p>
         </header>
 
-        <!-- Menu -->
-        <nav id="menu">
-            <ul class="links">
+        <!-- Navigation -->
+        <nav>
+            <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <ul class="actions stacked">
-                <li><a href="#" class="button primary fit">Get Started</a></li>
-                <li><a href="#" class="button fit">Log In</a></li>
-            </ul>
         </nav>
 
-        <!-- Banner -->
-        <section id="banner" class="major">
-            <div class="inner">
-                <header class="major">
-                    <h1>Hi, my name is Forty</h1>
-                </header>
-                <div class="content">
-                    <p>A responsive site template designed by HTML5 UP<br />
-                    and released under the Creative Commons.</p>
-                    <ul class="actions">
-                        <li><a href="#one" class="button next scrolly">Get Started</a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Main -->
+        <!-- Main Content -->
         <div id="main">
-
-            <!-- One -->
-            <section id="one" class="tiles">
-                <!-- Content goes here -->
+            <!-- Blog Posts -->
+            <section id="blog">
+                <div class="inner">
+                    <h2>Latest Blog Posts</h2>
+                    <div class="blog-post">
+                        <h3>Sample Blog Post 1</h3>
+                        <p>This is the content of the first blog post.</p>
+                    </div>
+                    <div class="blog-post">
+                        <h3>Sample Blog Post 2</h3>
+                        <p>This is the content of the second blog post.</p>
+                    </div>
+                    <!-- Add more blog posts here -->
+                </div>
             </section>
-
-            <!-- Two -->
-            <section id="two">
-                <!-- Content goes here -->
-            </section>
-
-            <!-- Three -->
-            <section id="three">
-                <!-- Content goes here -->
-            </section>
-
-            <!-- Four -->
-            <section id="four">
-                <!-- Content goes here -->
-            </section>
-
-            <!-- Five -->
-            <section id="five">
-                <!-- Content goes here -->
-            </section>
-
-            <!-- Six -->
-            <section id="six">
-                <!-- Content goes here -->
-            </section>
-
         </div>
 
-        <!-- Contact -->
-        <section id="contact">
-            <div class="inner">
-                <!-- Contact form and information goes here -->
-            </div>
-        </section>
-
         <!-- Footer -->
-        <footer id="footer">
-            <div class="inner">
-                <!-- Footer content goes here -->
-            </div>
+        <footer>
+            <p>&copy; 2024 Victor Gonzalez. All rights reserved.</p>
         </footer>
 
     </div>
