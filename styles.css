@@ -1,0 +1,35 @@
+/* Styles for the header section */
+#header {
+    background-color: #fbfbfe; /* Background color */
+    padding: 20px; /* Add some padding for spacing */
+}
+
+/* Styles for the navigation links */
+#navbar li {
+    display: inline; /* Display the list items horizontally */
+    margin-right: 20px; /* Add some spacing between the links */
+}
+
+#navbar li a {
+    color: #050315; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    padding: 5px; /* Add padding to make the links easier to click */
+}
+
+#navbar li a.active {
+    font-weight: bold; /* Bold font for active link */
+}
+
+/* Styles for the mobile navigation icon */
+#mobile span {
+    color: #050315; /* Text color */
+    font-size: 24px; /* Set font size */
+    cursor: pointer; /* Change cursor to indicate interactivity */
+}
+
+/* Styles for the cart icon */
+#bag-icon a {
+    color: #050315; /* Text color */
+    text-decoration: none; /* Remove underline from link */
+    padding: 5px; /* Add padding to make the link easier to click */
+}
