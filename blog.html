@@ -3,18 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Victor Gonzalez</title>
+    <title>Blog</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
+    <!-- Navigation Bar with Dropdown Menu -->
+    <nav id="navbar">
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
     <!-- Main Section -->
     <section class="main-section">
-        <h2>Blog</h2>
-        <div class="blog-post">
-            <h3>Post Title</h3>
-            <p>This is the content of the blog post. You can write your thoughts, ideas, or any other information here.</p>
-            <img src="https://tse2.mm.bing.net/th/id/OIP.Uge8n3cdvDQTUusYkX_BwAHaFl?w=227&h=180&c=7&r=0&o=5&pid=1.7" alt="Blog Post Image">
+        <h1 style="color: black;">Blog</h1>
+        
+        <!-- Blog Posts -->
+        <div class="blog-posts">
+            <div class="blog-post">
+                <h2>Blog Post Title 1</h2>
+                <p>Posted on January 1, 2025</p>
+                <p>This is the content of the first blog post. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <a href="blog-post-1.html">Read More</a>
+            </div>
+            
+            <div class="blog-post">
+                <h2>Blog Post Title 2</h2>
+                <p>Posted on January 2, 2025</p>
+                <p>This is the content of the second blog post. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <a href="blog-post-2.html">Read More</a>
+            </div>
+            
+            <!-- Add more blog posts as needed -->
         </div>
     </section>
 
@@ -30,4 +57,3 @@
 
 </body>
 </html>
-
