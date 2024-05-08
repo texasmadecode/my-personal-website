@@ -1,7 +1,9 @@
 /* Styles for the header section */
+/* Styles for the header section */
 #header {
     background-color: #fbfbfe; /* Background color */
     padding: 20px; /* Add some padding for spacing */
+    background: url('texasmadecode/my-personal-website/pics/banner.jpg') center/cover no-repeat; /* Background image */
 }
 
 /* Styles for the logo */
