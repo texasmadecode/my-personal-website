@@ -1,6 +1,6 @@
 body {
-    background-color: #0d0d0d;
-    color: #e6e6e6;
+    background-color: black;
+    color: white;
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
@@ -15,6 +15,8 @@ header {
 
 header h1 {
     animation: neon 1.5s ease-in-out infinite alternate;
+    color: #009ffd;
+    text-shadow: 0 0 10px #009ffd, 0 0 20px #009ffd, 0 0 30px #009ffd, 0 0 40px #2a2a72;
 }
 
 nav ul {
@@ -28,7 +30,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #e6e6e6;
+    color: white;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
@@ -80,3 +82,4 @@ a:hover {
         text-shadow: 0 0 10px #009ffd, 0 0 20px #009ffd, 0 0 30px #009ffd, 0 0 40px #2a2a72, 0 0 70px #2a2a72, 0 0 80px #2a2a72, 0 0 100px #2a2a72, 0 0 150px #2a2a72;
     }
 }
+
